@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/custom_color"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="160dp"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/facebook_ic"
+
+                    />
+
+                <EditText
+                    android:layout_width="290dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_email"
+                    android:background="@drawable/form_back"
+                    android:layout_marginTop="40dp"
+                    android:padding="8dp"
+                    android:hint="Mobile number or Email"
+                    android:textColorHint="@color/grey"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:drawablePadding="8dp"/>
+                <EditText
+                    android:layout_width="290dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_password"
+                    android:textColorHint="@color/grey"
+                    android:background="@drawable/form_back"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"/>
+                <Button
+                    android:layout_width="290dp"
+                    android:layout_height="55dp"
+                    android:text="Login"
+                    android:id="@+id/log_in_button"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/blue"
+                    app:cornerRadius = "30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forget_password"
+                    android:text="Forget Password?"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"/>
+                <Button
+                    android:layout_width="290dp"
+                    android:layout_height="55dp"
+                    android:text="Create new account"
+                    android:id="@+id/create_account_button"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="90dp"
+                    android:backgroundTint="@color/custom_color"
+
+                    app:cornerRadius = "30dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
